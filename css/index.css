@@ -66,7 +66,7 @@ body{
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-
+	position: relative;
 }
 .topbarRight2:hover{
 	background: #fff;
@@ -78,6 +78,30 @@ body{
 }
 .topbarRight2 a:hover{
 	color: orange;
+}
+@keyframes downCar{
+	0%{
+		height:48px;
+	}
+	100%{
+		height: 98px;
+	}
+}
+.topbarRight2 a:hover .down-car{
+	display: block;
+}
+.topbarRight2 .down-car{
+	animation:downCar .3s;
+	position: absolute;
+	width: 316px;
+	color: #424242;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+	right: 0;
+	text-align: center;
+	line-height: 98px;
+	font-size: 12px;
+	display:none;
 }
 .head{
 	width: 1226px;
@@ -498,10 +522,10 @@ input{
 	display: inline;
 	position: relative;
 }
-.znyj-Cr .smBox:hover{
+/*.znyj-Cr .smBox:hover{
 	box-shadow: 0 0 15px #ccc;
 	top: -4px;
-}
+}*/
 .smBox .smBoxI{
 	width: 160px;
 	height: 160px;
@@ -626,10 +650,10 @@ input{
 	display: inline;
 	position: relative;
 }
-.dpC-r .dpC-rB:hover{
+/*.dpC-r .dpC-rB:hover{
 	box-shadow: 0 0 15px #ccc;
 	top: -4px;
-}
+}*/
 .dpC-rBi{
 	width: 150px;
 	height: 150px;
@@ -804,10 +828,10 @@ input{
 	display: inline;
 	position: relative;
 }
-.mCont-Rbox:hover{
+/*.mCont-Rbox:hover{
 	box-shadow: 0 0 15px #ccc;
 	top: -4px;
-}
+}*/
 .mCont-Rbox .RboxI{
 	width: 150px;
 	height: 150px;
@@ -989,10 +1013,10 @@ input{
 	display: inline;
 	position: relative;
 }
-.zbCont-rs .zbCt-rB:hover{
+/*.zbCont-rs .zbCt-rB:hover{
 	box-shadow: 0 0 15px #ccc;
 	top: -4px;
-}
+}*/
 
 .zbCt-rB .rBI{
 	width: 150px;
@@ -2016,7 +2040,6 @@ input{
 	width:1349px;
 	height:96px;
 	background:#fafafa;
-	
 	font-size:12px;
 }
 .overContent{
@@ -2026,7 +2049,6 @@ input{
 	margin:0 auto;
 	position:relative;
 	top:30px;
-	
 }
 #bottomLogo{
 	height:36px;
@@ -2034,8 +2056,6 @@ input{
 }
 .overContent p{
 	display:inline;
-	
-	
 	position:relative;
 	bottom:26px;
 }

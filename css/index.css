@@ -156,6 +156,7 @@ body{
 	line-height: 50px;
 }
 .headRight2{
+	display: block;
 	width: 50px;
 	height: 50px;
 	background: #fff;
@@ -163,7 +164,13 @@ body{
 	border-left: none;
 	float: right;
 	margin-top: 25px;
-	cursor: pointer;
+	background-image: url(../images/search-a.png);
+	background-position: center;
+}
+.headRight2:hover{
+	background: #ff6700;
+	background-image: url(../images/search-aa.png);
+	background-position: center;
 }
 input{
 	border:none;
@@ -500,9 +507,10 @@ input{
 	background:;
 	float: left;
 	position: relative;
+	transition:all .4s;
 }
 .znyj-C .znyj-Cl:hover{
-	top:-4px;
+	transform:translateY(-4px);
 }
 .znyj-Cl img{
 	border:0;
@@ -521,11 +529,11 @@ input{
 	float: left;
 	display: inline;
 	position: relative;
+	transition:all .4s;
 }
-/*.znyj-Cr .smBox:hover{
-	box-shadow: 0 0 15px #ccc;
-	top: -4px;
-}*/
+.znyj-Cr .smBox:hover{
+	transform:translateY(-4px);
+}
 .smBox .smBoxI{
 	width: 160px;
 	height: 160px;
@@ -619,10 +627,12 @@ input{
 	float: left;
 }
 .dpC-l a{
+	display: block;
 	position: relative;
+	transition:all .4s;
 }
 .dpC-l a:hover{
-	top:-4px;
+	transform:translateY(-4px);
 }
 .dpC-l a img{
 	border:0;
@@ -650,10 +660,6 @@ input{
 	display: inline;
 	position: relative;
 }
-/*.dpC-r .dpC-rB:hover{
-	box-shadow: 0 0 15px #ccc;
-	top: -4px;
-}*/
 .dpC-rBi{
 	width: 150px;
 	height: 150px;
@@ -799,9 +805,11 @@ input{
 }
 .mainContent-L a{
 	position: relative;
+	display: block;
+	transition:all .4s;
 }
 .mainContent-L a:hover{
-	top:-4px;
+	transform:translateY(-4px);
 }
 .mainContent-L a img{
 	border:0;
@@ -828,10 +836,6 @@ input{
 	display: inline;
 	position: relative;
 }
-/*.mCont-Rbox:hover{
-	box-shadow: 0 0 15px #ccc;
-	top: -4px;
-}*/
 .mCont-Rbox .RboxI{
 	width: 150px;
 	height: 150px;
@@ -984,9 +988,11 @@ input{
 }
 .zbCont-l a{
 	position: relative;
+	display: block;
+	transition:all .4s;
 }
 .zbCont-l a:hover{
-	top:-4px;
+	transform:translateY(-4px);
 }
 .zbCont-l a img{
 	border:0;
@@ -1201,10 +1207,14 @@ input{
 	float:left;
 	margin-right:14px;
 	display:inline;
+	transition:all .4s;
+}
+.wntjBox_{
+	transition:all .4s;
 }
 .wntjBox:hover,.wntjBox_:hover{
 	box-shadow: 0 0 15px #ccc;
-	top: -4px;
+	transform:translateY(-4px);
 	position: relative;
 }
 .wntjBox_{
@@ -1284,9 +1294,10 @@ input{
 	margin-right:18px;
 	display:inline;
 	position: relative;
+	transition:all .4s;
 }
 .rpcpContentBox:hover{
-	top:-4px;
+	transform:translateY(-4px);
 }
 .rpcpContentBox img{
 	width:296px;
@@ -1339,9 +1350,10 @@ input{
 	margin-left:2px;
 	display:inline;
 	position: relative;
+	transition:all .4s;
 }
 .rpcpContentBox_:hover{
-	top:-4px;
+	transform:translateY(-4px);
 }
 .rpcpContentBox_ img{
 	width:296px;
@@ -1602,8 +1614,11 @@ input{
   margin-right:18px;
   position:relative;
   display:inline;
+  transition:all .4s;
 }
-
+.spContentBox:hover{
+  transform:translateY(-4px);
+}
 .yuanzhu{
 	width:36px;
 	height:24px;
@@ -1659,6 +1674,10 @@ input{
   margin-left:2px;
   position:relative;
   display:inline;
+  transition:all .4s;
+}
+.spContentBox_:hover{
+	transform:translateY(-4px);
 }
 .yuanzhu_{
 	width:36px;

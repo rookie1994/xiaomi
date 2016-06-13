@@ -4,6 +4,8 @@
 }
 body{
 	background: #fff;
+	color: #333;
+	min-width: 1226px;
 }
 .topbar{
 	width:100%;
@@ -181,7 +183,7 @@ input{
 .banner{
 	width: 1226px;
 	height: 460px;
-	background: red;
+	background:#fff;
 	margin: 10px auto 16px;
 	position: relative;
 	overflow: hidden;
@@ -484,7 +486,7 @@ input{
 	height: 100%;
 	float: right;
 	line-height: 58px;
-		
+	position: relative;
 	
 }
 .znyj-Hm a{
@@ -511,6 +513,7 @@ input{
 }
 .znyj-C .znyj-Cl:hover{
 	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .znyj-Cl img{
 	border:0;
@@ -533,11 +536,12 @@ input{
 }
 .znyj-Cr .smBox:hover{
 	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .smBox .smBoxI{
 	width: 160px;
 	height: 160px;
-	background: red;
+	background:#fff;
 	margin: 20px auto;
 }
 .smBox .smBoxI img{
@@ -633,6 +637,7 @@ input{
 }
 .dpC-l a:hover{
 	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .dpC-l a img{
 	border:0;
@@ -643,13 +648,13 @@ input{
 	width:992px;
 	height: 614px;
 	float: left;
-	overflow: hidden;
 }
 .dpContent .dpC-r{
 	width: 992px;
 	height: 614px;
 	background:;
 	float: left;
+	display: none;
 }
 .dpC-r .dpC-rB{
 	width: 234px;
@@ -659,11 +664,19 @@ input{
 	float: left;
 	display: inline;
 	position: relative;
+	transition:all .4s;
+}
+.dpC-r .dpC-rB:last-child:hover{
+	transform:none;
+}
+.dpC-r .dpC-rB:hover{
+	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .dpC-rBi{
 	width: 150px;
 	height: 150px;
-	background: yellow;
+	background:#fff;
 	margin: 20px auto 30px;
 }
 .dpC-rBi a img{
@@ -701,6 +714,11 @@ input{
 	background:#fff;
 	margin-bottom: 14px;
 	position: relative;
+	transition:all .4s;
+}
+.dpC-rB .dpC-rBs:hover{
+	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .dpC-rBs .rBsT{
 	float: left;
@@ -720,7 +738,7 @@ input{
 .dpC-rBs .rBsI{
 	width: 80px;
 	height: 80px;
-	background: red;
+	background:#fff;
 	position: absolute;
 	right: 8px;
 	top:40px;
@@ -810,6 +828,7 @@ input{
 }
 .mainContent-L a:hover{
 	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .mainContent-L a img{
 	border:0;
@@ -820,12 +839,12 @@ input{
 	width: 992px;
 	height: 614px;
 	float: left;
-	overflow: hidden;
 }
 .mContent-R{
 	width: 100%;
 	height:100%;
 	background:;
+	display: none;
 }
 .mCont-Rbox{
 	width: 234px;
@@ -835,11 +854,19 @@ input{
 	float: left;
 	display: inline;
 	position: relative;
+	transition:all .4s;
+}
+.mCont-Rbox:hover{
+	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
+}
+.mCont-Rbox:last-child:hover{
+	transform:none;
 }
 .mCont-Rbox .RboxI{
 	width: 150px;
 	height: 150px;
-	background: red;
+	background:#fff;
 	margin: 20px auto 30px;
 }
 .mCont-Rbox .RboxI img{
@@ -876,6 +903,11 @@ input{
 	background:#fff;
 	margin-bottom: 14px;
 	position: relative;
+	transition:all .4s;
+}
+.mCont-Rbox .mCont-Rboxs:hover{
+	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .mCont-Rboxs .RboxsN{
 	float: left;
@@ -895,7 +927,7 @@ input{
 .mCont-Rboxs .RboxsI{
 	width: 80px;
 	height: 80px;
-	background: red;
+	background:#fff;
 	position: absolute;
 	right: 8px;
 	top:40px;
@@ -993,6 +1025,7 @@ input{
 }
 .zbCont-l a:hover{
 	transform:translateY(-4px);
+	box-shadow: 0 0 15px #ccc;
 }
 .zbCont-l a img{
 	border:0;
@@ -1018,16 +1051,20 @@ input{
 	float: left;
 	display: inline;
 	position: relative;
+	transition:all .4s;
 }
-/*.zbCont-rs .zbCt-rB:hover{
+.zbCont-rs .zbCt-rB:hover{
 	box-shadow: 0 0 15px #ccc;
-	top: -4px;
-}*/
-
+	transform:translateY(-4px);
+}
+.zbCont-rs .zbCt-rB:last-child{
+	transform:none;
+	box-shadow: none;
+}
 .zbCt-rB .rBI{
 	width: 150px;
 	height: 150px;
-	background: red;
+	background:#fff;
 	margin: 20px auto 30px;
 }
 .zbCt-rB .rBI img{
@@ -1064,6 +1101,10 @@ input{
 	background:#fff;
 	margin-bottom: 14px;
 	position: relative;
+	transition:all .4s;
+}
+.zbCt-rB .smalB:hover{
+	transform:translateY(-4px);
 }
 .smalB .smalB-N{
 	float: left;
@@ -1083,7 +1124,7 @@ input{
 .smalB .smalB-I{
 	width: 80px;
 	height: 80px;
-	background: red;
+	background:#fff;
 	position: absolute;
 	right: 8px;
 	top:40px;
@@ -1620,21 +1661,17 @@ input{
   transform:translateY(-4px);
 }
 .yuanzhu{
-	width:36px;
-	height:24px;
-	
 	position:absolute;
 	top:140px;
 	left:20px;
-	background:black;
-	border-radius:46%;
-	border:2px solid white;
+	color: #fff;
+	font-size: 34px!important;
 }
 
 .spContentBoxTop{
 	width:296px;
 	height:180px;
-	background:yellow;
+	background:#fff;
 }
 .spContentBoxTop img{
 	border:0;

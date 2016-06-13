@@ -154,7 +154,7 @@ window.onload=function(){
 	var dps=getClass("dpC-r");
 	var dpbts=getClass("dpH")[0].getElementsByTagName("li");
 	// console.log(dpbts);
-
+	dps[0].style.display="block";
 	for(var i=0;i<dpbts.length;i++){
 		dpbts[i].index=i;
 		dpbts[i].onmouseover=function(){
@@ -172,6 +172,7 @@ window.onload=function(){
 	// console.log(iBox);
 	var iBtn=getClass("mContHead")[0].getElementsByTagName("li");
 	// console.log(iBtn)
+	iBox[0].style.display="block";
 	for(var i=0;i<iBtn.length;i++){
 		iBtn[i].index=i;
 		iBtn[i].onmouseover=function(){
